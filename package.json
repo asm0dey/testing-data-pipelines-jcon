@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
+    "build-gha": "slidev build --base /testing-data-pipelines-json/",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "export-pdf": "slidev export --with-clicks --format pdf --output dist/index.pdf"
   },
   "dependencies": {
     "@iconify-json/logos": "^1.2.4",
@@ -16,5 +18,8 @@
     "@slidev/theme-seriph": "latest",
     "slidev-theme-dracula": "^0.2.0",
     "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.52.0"
   }
 }

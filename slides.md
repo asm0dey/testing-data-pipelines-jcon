@@ -67,16 +67,6 @@ backgroundSize: 60%
 # Data processing { .center-title }
 
 ---
-
-# Unit testing of pipeline
-
-What may we test here?
-
-A pipeline should transform data correctly!
-
-_Correctness is a business term_
-
----
 layout: image
 image: /datalake.svg
 backgroundSize: contain
@@ -86,12 +76,17 @@ backgroundSize: contain
 
 ---
 
+[TBD] pipeline from tech pof
+
+---
+
 # Who needs pipelines
 
-*  Data Scientists
-*  Data Analytics
-*  Marketing
-*  PO
+* Data Scientists
+* Data Analytics
+* Data Engineers
+* POs
+* any data-driven person
 
 ---
 layout: fact
@@ -192,6 +187,24 @@ Reference data at the end of the pipeline
 
 [MrPowers/spark-daria](https://github.com/MrPowers/spark-daria) ← tools to easily create test data
 
+---
+
+### When to run?
+
+# On CI/CD
+
+---
+
+# Things we usually forget to test
+
+* empty source/target datasets,
+* one scenario per one test
+
+---
+
+# Things we usually forget after unit testing
+
+100% coverage doesn't mean that we're 100% safe
 
 ---
 layout: image
@@ -255,6 +268,14 @@ class PostgreSQLIntegrationTest {
     }
 }
 ```
+---
+
+# Things we usually forget to test
+
+* reruns (idempotency),
+* data duplicates (inside/outside batch),
+* incremental runs logic,
+* metastore data (partitions, parameters, etc)
 
 ---
 layout: image
@@ -278,6 +299,8 @@ Why are component tests not enough?
 
 * vendor lock tools (DB, processing, etc.)
 * external error handling
+* access to data
+* overall integration (especially for platform tooling)
 
 ---
 layout: image
@@ -486,8 +509,7 @@ What?
 <v-clicks>
 
 * data volumes
-* counters
-* time
+* time (SLAs)
 * dead letter queue monitoring
 * service health
 * business metrics
@@ -511,7 +533,7 @@ How?
 layout: statement
 ---
 
-# Data pipelines is always DAG
+# Data pipeline is always a DAG
 ## Monitoring should visualize it
 
 ---

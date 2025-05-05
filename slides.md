@@ -192,7 +192,7 @@ Reference data at the end of the pipeline
 
 ---
 
-### When to run?
+### When Should You Run It?
 
 # On CI/CD
 
@@ -215,7 +215,7 @@ image: /component.svg
 backgroundSize: 70%
 ---
 
-# Component testing
+# Component testing (or Integration testing)
 
 ---
 layout: image
@@ -238,6 +238,7 @@ backgroundSize: contain
 Supported languages:
 
 * Java (and compatibles: Scala, Kotlin, etc.)
+* LocalStack Module (AWS)
 * Python
 * Go
 * Node.js
@@ -271,6 +272,12 @@ class PostgreSQLIntegrationTest {
     }
 }
 ```
+---
+
+### When Should You Run It?
+
+# On CI/CD (but you might want to consider file changes in specific directories)
+
 ---
 
 # Things we usually forget to test

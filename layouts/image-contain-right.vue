@@ -13,7 +13,10 @@
 
 <script setup>
 import { computed } from "vue";
-
+function resolveAssetUrl(url) {
+    if (url.startsWith("/")) return import.meta.env.BASE_URL + url.slice(1);
+    return url;
+}
 // Define props with defaults
 const props = defineProps({
     image: {
@@ -36,8 +39,10 @@ const props = defineProps({
 
 // Compute the style for the image container
 const imageContainerStyle = computed(() => {
+    const resolvedImageUrl = resolveAssetUrl(props.image);
+
     return {
-        backgroundImage: `url(${props.image})`,
+        backgroundImage: `url(${resolvedImageUrl})`,
         backgroundSize: props.backgroundSize,
         backgroundPosition: props.backgroundPosition,
         backgroundRepeat: props.backgroundRepeat,

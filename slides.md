@@ -22,6 +22,9 @@ aspectRatio: 16/9
 layout: cover
 # real width of the canvas, unit in px
 canvasWidth: 800
+lineNumbers: true
+selectable: true
+colorSchema: dark
 ---
 
 # Himalayan Peaks

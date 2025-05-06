@@ -14,8 +14,9 @@
 <script setup>
 import { computed } from "vue";
 function resolveAssetUrl(url) {
-    if (url.startsWith("/")) return import.meta.env.BASE_URL + url.slice(1);
-    return url;
+    return url.startsWith("/")
+        ? `${import.meta.env.BASE_URL}${url.slice(1)}`
+        : url;
 }
 // Define props with defaults
 const props = defineProps({

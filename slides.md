@@ -78,8 +78,10 @@ backgroundSize: contain
 # Data Lake?
 
 ---
-
-[TBD] pipeline from tech pof
+layout: image
+image: /pipeline.svg
+backgroundSize: contain
+---
 
 ---
 
@@ -137,10 +139,6 @@ backgroundSize: contain
 layout: image-contain-right
 image: /typical_pipeline.svg
 class: bg-right
----
-
-# Typical pipeline
-
 ---
 
 # Typical pipeline

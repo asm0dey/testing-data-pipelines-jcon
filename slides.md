@@ -31,7 +31,7 @@ colorSchema: dark
 
 of Testing Data Pipelines
 
-Ksenia Tomak, HelloFresh
+Kseniia Tomak, HelloFresh
 
 Pasha Finkelshteyn, BellSoft
 
@@ -65,7 +65,7 @@ backgroundSize: cover
 <v-clicks>
 
 - <div v-after>Kseniia Tomak</div>
-- Data Engineering Manager
+- Data Engineering Manager at HelloFresh
 - ≈14 years of Engineering experience. Mostly Data engineering
 - <logos-linkedin-icon /> ksenia-tomak
 

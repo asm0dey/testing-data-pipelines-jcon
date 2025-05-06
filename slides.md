@@ -177,6 +177,7 @@ What may we test here?
 
 A pipeline should transform data correctly!
 
+
 *Correctness is a business term*
 
 ---
@@ -202,8 +203,10 @@ Reference data at the end of the pipeline
 [MrPowers/spark-daria](https://github.com/MrPowers/spark-daria) ← tools to easily create test data
 
 ---
+layout: statement
+---
 
-### When Should You Run It?
+## When Should You Run It?
 
 # On CI/CD
 
@@ -285,9 +288,11 @@ class PostgreSQLIntegrationTest {
 ```
 ---
 
-### When Should You Run It?
+## When Should You Run It?
 
-# On CI/CD (but you might want to consider file changes in specific directories)
+# On CI/CD
+
+## consider file changes in specific files
 
 ---
 

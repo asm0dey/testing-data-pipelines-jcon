@@ -153,10 +153,6 @@ backgroundSize: contain
 # Bronze→Silver pipeline
 
 ---
-layout: image-contain-right
-image: /typical_pipeline.svg
-class: bg-right
----
 
 # Typical pipeline
 

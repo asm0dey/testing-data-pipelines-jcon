@@ -55,6 +55,23 @@ backgroundSize: cover
 </v-clicks>
 
 ---
+layout: image-contain-right
+image: '/ktomak.jpg'
+backgroundPosition: right
+backgroundSize: cover
+---
+# `whoami`
+
+<v-clicks>
+
+- <div v-after>Kseniia Tomak</div>
+- Data Engineering Manager
+- ≈14 years of Engineering experience. Mostly Data engineering
+- <logos-linkedin-icon /> ksenia-tomak
+
+</v-clicks>
+
+---
 layout: image
 image: /etl.png
 backgroundSize: 60%

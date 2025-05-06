@@ -31,7 +31,7 @@ colorSchema: dark
 
 of Testing Data Pipelines
 
-Ksenia Tomak, HelloFresh
+Kseniia Tomak, HelloFresh
 
 Pasha Finkelshteyn, BellSoft
 
@@ -51,6 +51,23 @@ backgroundSize: cover
 - And <logos-spring-icon />
 - <logos-twitter /> asm0di0
 - <logos-mastodon-icon /> @asm0dey@fosstodon.org
+
+</v-clicks>
+
+---
+layout: image-contain-right
+image: '/ktomak.jpg'
+backgroundPosition: right
+backgroundSize: cover
+---
+# `whoami`
+
+<v-clicks>
+
+- <div v-after>Kseniia Tomak</div>
+- Data Engineering Manager at HelloFresh
+- ≈14 years of Engineering experience. Mostly Data engineering
+- <logos-linkedin-icon /> ksenia-tomak
 
 </v-clicks>
 

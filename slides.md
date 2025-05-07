@@ -14,6 +14,7 @@ drawings:
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
+# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # open graph
 # seoMeta:
@@ -63,7 +64,7 @@ backgroundSize: cover
 layout: image-contain-right
 image: "/ktomak.jpg"
 backgroundPosition: right
-backgroundSize: cover
+backgroundSize: contain
 ---
 
 # `whoami`

@@ -26,7 +26,7 @@ lineNumbers: true
 selectable: true
 colorSchema: dark
 themeConfig:
-  background: '#1D223B' # Replace with your desired color
+  background: "#1D223B" # Replace with your desired color
 ---
 
 # Himalayan Peaks
@@ -41,10 +41,11 @@ Pasha Finkelshteyn, BellSoft
 
 ---
 layout: image-contain-right
-image: '/asm0dey.jpg'
+image: "/asm0dey.jpg"
 backgroundPosition: right
 backgroundSize: cover
 ---
+
 # `whoami`
 
 <v-clicks>
@@ -60,10 +61,11 @@ backgroundSize: cover
 
 ---
 layout: image-contain-right
-image: '/ktomak.jpg'
+image: "/ktomak.jpg"
 backgroundPosition: right
 backgroundSize: cover
 ---
+
 # `whoami`
 
 <v-clicks>
@@ -108,11 +110,11 @@ backgroundSize: contain
 
 # Who needs pipelines
 
-* Data Scientists
-* Data Analytics
-* Data Engineers
-* POs
-* any data-driven person
+- Data Scientists
+- Data Analytics
+- Data Engineers
+- POs
+- any data-driven person
 
 ---
 layout: fact
@@ -181,8 +183,7 @@ What may we test here?
 
 A pipeline should transform data correctly!
 
-
-*Correctness is a business term*
+_Correctness is a business term_
 
 ---
 layout: image
@@ -200,6 +201,7 @@ Reference data at the end of the pipeline
 ---
 
 # Tools
+
 <div></div>
 
 [holdenk/spark-testing-base](https://github.com/holdenk/spark-testing-base) ← Tools to run tests
@@ -218,8 +220,8 @@ layout: statement
 
 # Things we usually forget to test
 
-* empty source/target datasets,
-* one scenario per one test
+- empty source/target datasets,
+- one scenario per one test
 
 ---
 
@@ -255,13 +257,13 @@ backgroundSize: contain
 
 Supported languages:
 
-* Java (and compatibles: Scala, Kotlin, etc.)
-* LocalStack Module (AWS)
-* Python
-* Go
-* Node.js
-* Rust
-* .NET
+- Java (and compatibles: Scala, Kotlin, etc.)
+- LocalStack Module (AWS)
+- Python
+- Go
+- Node.js
+- Rust
+- .NET
 
 ---
 
@@ -290,6 +292,7 @@ class PostgreSQLIntegrationTest {
     }
 }
 ```
+
 ---
 
 ## When Should You Run It?
@@ -302,10 +305,10 @@ class PostgreSQLIntegrationTest {
 
 # Things we usually forget to test
 
-* reruns (idempotency),
-* data duplicates (inside/outside batch),
-* incremental runs logic,
-* metastore data (partitions, parameters, etc)
+- reruns (idempotency),
+- data duplicates (inside/outside batch),
+- incremental runs logic,
+- metastore data (partitions, parameters, etc)
 
 ---
 layout: image
@@ -327,10 +330,10 @@ backgroundSize: contain
 
 Why are component tests not enough?
 
-* vendor lock tools (DB, processing, etc.)
-* external error handling
-* access to data
-* overall integration (especially for platform tooling)
+- vendor lock tools (DB, processing, etc.)
+- external error handling
+- access to data
+- overall integration (especially for platform tooling)
 
 ---
 layout: image
@@ -365,12 +368,12 @@ backgroundSize: 80%
 # Comparison example
 
 | **gender** | **reference** | **id** | **match** |
-|--------|-----------|----|-------|
-| m      | m         | 1  | true  |
-| f      | c         | 2  | false |
-| u      | u         | 3  | true  |
-| c      | c         | 4  | true  |
-| m      | f         | 5  | false |
+| ---------- | ------------- | ------ | --------- |
+| m          | m             | 1      | true      |
+| f          | c             | 2      | false     |
+| u          | u             | 3      | true      |
+| c          | c             | 4      | true      |
+| m          | f             | 5      | false     |
 
 ---
 layout: center
@@ -414,18 +417,18 @@ Test:
 
 # Real data expectations. Tools:
 
-* [great expectations](https://greatexpectations.io/)
-* [Deequ](https://github.com/awslabs/deequ)
+- [great expectations](https://greatexpectations.io/)
+- [Deequ](https://github.com/awslabs/deequ)
 
 ---
 
 # Real data expectations
 
-* profilers
-* constraint suggestions
-* constraint verification
-* metrics
-* metrics strores
+- profilers
+- constraint suggestions
+- constraint verification
+- metrics
+- metrics strores
 
 ---
 
@@ -498,10 +501,10 @@ verificationDf.show()
 
 # Java Deequ. Results
 
-| **constraint** | **constraint_status** | **constraint_message** |
-|-- |-- |-- |
-| CompletenessConstraint | Success | |
-| ComplianceConstraint | Failure |  Value: 0.5 does not meet the constraint requirement! |
+| **constraint**         | **constraint_status** | **constraint_message**                               |
+| ---------------------- | --------------------- | ---------------------------------------------------- |
+| CompletenessConstraint | Success               |                                                      |
+| ComplianceConstraint   | Failure               | Value: 0.5 does not meet the constraint requirement! |
 
 ---
 
@@ -509,9 +512,9 @@ verificationDf.show()
 
 <v-clicks>
 
-* pre-ingestion and post-ingestion data validaton
-* before pipeline development
-* monitoring and alerting
+- pre-ingestion and post-ingestion data validaton
+- before pipeline development
+- monitoring and alerting
 
 </v-clicks>
 
@@ -527,8 +530,8 @@ backgroundSize: contain
 
 Why?
 
-* The only REAL testing is production
-* Data tends to change over time
+- The only REAL testing is production
+- Data tends to change over time
 
 ---
 
@@ -538,13 +541,14 @@ What?
 
 <v-clicks>
 
-* data volumes
-* time (SLAs)
-* dead letter queue monitoring
-* service health
-* business metrics
+- data volumes
+- time (SLAs)
+- dead letter queue monitoring
+- service health
+- business metrics
 
 </v-clicks>
+
 ---
 
 # Monitoring
@@ -553,9 +557,9 @@ How?
 
 <v-clicks>
 
-* use Listeners
-* Data Aggregators
-* Airflow (Dagster, Prefect, etc)
+- use Listeners
+- Data Aggregators
+- Airflow (Dagster, Prefect, etc)
 
 </v-clicks>
 
@@ -564,6 +568,7 @@ layout: statement
 ---
 
 # Data pipeline is always a DAG
+
 ## Monitoring should visualize it
 
 ---
@@ -586,9 +591,9 @@ Compare with reports, old DWH
 
 Multiple dimensions:
 
-* data
-* data latency
-* performance, scalability
+- data
+- data latency
+- performance, scalability
 
 ---
 layout: image
@@ -605,8 +610,8 @@ image: /performance_tests.svg
 
 <br/>
 
-* start with SLO
-* test your initial data load
+- start with SLO
+- test your initial data load
 
 ---
 layout: image
@@ -632,10 +637,10 @@ backgroundSize: contain
 
 <v-clicks>
 
-*    Testing pipeline is like testing code
-*    Testing pipelines is not like testing code
-*    Pipeline quality is not only about testing
-*    Sometimes testing outside of production is tricky
+- Testing pipeline is like testing code
+- Testing pipelines is not like testing code
+- Pipeline quality is not only about testing
+- Sometimes testing outside of production is tricky
 
 </v-clicks>
 
@@ -644,6 +649,7 @@ layout: center
 ---
 
 # Thanks!
+
 # Questions? 🙇
 
 <div></div>

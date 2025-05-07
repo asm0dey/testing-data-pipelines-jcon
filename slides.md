@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: /cover.png
 # some information about your slides (markdown enabled)
 title: Himalayan Peaks of Testing Data Pipelines
 # apply unocss classes to the current slide
@@ -25,11 +25,15 @@ canvasWidth: 800
 lineNumbers: true
 selectable: true
 colorSchema: dark
+themeConfig:
+  background: '#1D223B' # Replace with your desired color
 ---
 
 # Himalayan Peaks
 
-of Testing Data Pipelines
+<div></div>
+
+## of Testing Data Pipelines
 
 Kseniia Tomak, HelloFresh
 

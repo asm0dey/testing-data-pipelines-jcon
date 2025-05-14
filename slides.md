@@ -396,7 +396,7 @@ layout: statement
 layout: statement
 ---
 
-# In pipeline testing you won't trust both your code and your data
+# In pipeline testing you won't trust neither your code nor your data
 
 ---
 
@@ -518,6 +518,14 @@ verificationDf.show()
 - monitoring and alerting
 
 </v-clicks>
+
+---
+layout: statement
+---
+
+## When Should You Run It?
+
+# In DAG run/on schedule
 
 ---
 layout: image
@@ -646,7 +654,9 @@ backgroundSize: contain
 </v-clicks>
 
 ---
-layout: center
+layout: image-contain-right
+image: /slido.svg
+backgroundSize: contain
 ---
 
 # Thanks!
@@ -658,3 +668,11 @@ layout: center
 @asm0di0
 
 @if_no_then_yes
+
+::right::
+
+![](/slido.svg)
+
+---
+layout: end
+---
